@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom double border style */
+.double-border {
+  border: 4px double black;
+  padding: 16px; 
+}

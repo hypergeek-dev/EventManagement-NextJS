@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Meeting {
+  id                  Int     @id @default(autoincrement())
+  id_bigint           String
+  worldid_mixed       String?
+  service_body_bigint Int
+  weekday_tinyint     Int
+  venue_type          Int
+  start_time          String
+  duration_time       String
+  time_zone           String
+  formats             String
+  longitude           Float
+  latitude            Float
+  root_server_uri     String
+  format_shared_id_list String
+  meeting_name        String
+  location_text       String?
+  location_info       String?
+  location_street     String?
+  location_neighborhood String?
+  location_municipality String?
+  location_sub_province String?
+  location_province   String?
+  location_postal_code_1 String?
+  contact_phone_2     String?
+  contact_email_2     String?
+  contact_name_2      String?
+  contact_phone_1     String?
+  contact_email_1     String?
+  contact_name_1      String?
+  phone_meeting_number String?
+  virtual_meeting_link String?
+  virtual_meeting_additional_info String?
+}

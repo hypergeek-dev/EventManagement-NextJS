@@ -1,14 +1,12 @@
-// app/page.tsx
-export default function HomePage() {
-  return (
-    <main>
-      <section>
-        <hr></hr>
-        <br></br>
-        <br></br>
-        <h1>Hello world!</h1>
 
-      </section>
-    </main>
-  );
-}
+import HeroImage from '../components/Pages/LandingPage/HeroImage';
+
+const Home = () => {
+    return (
+        <>
+            <HeroImage />
+        </>
+    );
+};
+
+export default Home;
